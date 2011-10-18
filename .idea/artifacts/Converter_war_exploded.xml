@@ -1,0 +1,23 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="Converter:war exploded">
+    <output-path>$PROJECT_DIR$/Converter/target/Converter-1.0</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="Converter/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="Converter" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: com.sun.jersey:jersey-server:1.0.3.1" />
+          <element id="library" level="project" name="Maven: com.sun.jersey:jersey-core:1.0.3.1" />
+          <element id="library" level="project" name="Maven: javax.ws.rs:jsr311-api:1.0" />
+          <element id="library" level="project" name="Maven: asm:asm:3.1" />
+          <element id="library" level="project" name="Maven: com.sun.xml.bind:jaxb-impl:2.1.12" />
+          <element id="library" level="project" name="Maven: javax.xml.bind:jaxb-api:2.1" />
+          <element id="library" level="project" name="Maven: javax.xml.stream:stax-api:1.0-2" />
+          <element id="library" level="project" name="Maven: javax.activation:activation:1.1" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

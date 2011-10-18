@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="Converter:war">
+    <output-path>$PROJECT_DIR$/Converter/target</output-path>
+    <root id="archive" name="Converter-1.0.war">
+      <element id="artifact" artifact-name="Converter:war exploded" />
+    </root>
+  </artifact>
+</component>

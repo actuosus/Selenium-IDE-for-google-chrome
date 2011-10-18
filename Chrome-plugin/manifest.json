@@ -1,0 +1,23 @@
+{
+    "name": "WebDriver IDE",
+    "version": "1.0",
+    "description": "This is the Chrome IDE to record your Selenium 2 tests",
+    "icons": {
+        "16": "images/selenium-ide-logo-16.png",
+        "32": "images/selenium-ide-logo-32.png",
+        "64": "images/selenium-ide-logo-64.png"
+    },
+    "browser_action": {
+        "default_icon": "images/selenium-ide-logo-32.png"
+    },
+    "background_page": "html/background.html",
+    "permissions": [
+        "contextMenus", "tabs", "http://*/*", "https://*/*"
+    ],
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["scripts/jquery-1.5.2.min.js", "scripts/Options.js", "scripts/Recorder.js", "scripts/contentscript.js", "scripts/Utils.js"]
+        }
+    ]
+}

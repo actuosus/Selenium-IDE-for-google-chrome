@@ -19,23 +19,6 @@
  *    @author Jeremy Herault (jeremy.herault AT gmail.com)
  */
 
-function GlobalManager() {
-    this.SeWinController = null;
+function Model(){
+
 }
-
-GlobalManager.initialized = false;
-
-
-GlobalManager.prototype.start = function() {
-
-
-    var features = "titlebar=no,menubar=no,location=no," +
-        "resizable=yes,scrollbars=yes,status=no,";
-
-    window.open("selenium-view.html", "SeWinID", features);
-}
-
-
-var globalManager = new GlobalManager();
-
-

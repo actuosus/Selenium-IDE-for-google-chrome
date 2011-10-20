@@ -84,7 +84,7 @@ Recorder.prototype.addSelectListeners = function () {
                         chrome.extension.sendRequest({type:"new", classType:"Select", varname:"select" + recorder.knownSelects.length, finders:{locators:Utils.getLocators(currentSelect)}}, function(response) {
                         });
                     }
-                    chrome.extension.sendRequest({type:"action", on:"select", method: this.selected ? "selectBy" : "deselectBy", finders:{selectName:recorder.knownSelectsName[index],locators: Utils.getOptionLocators(this)}, params:{}}, function(response) {
+                    chrome.extension.sendRequest({type:"action", on:"Select", method: this.selected ? "selectBy" : "deselectBy", finders:{selectName:recorder.knownSelectsName[index],locators: Utils.getOptionLocators(this)}, params:{}}, function(response) {
                     });
                     this._wasSelected = this.selected;
                 }
@@ -96,7 +96,7 @@ Recorder.prototype.addSelectListeners = function () {
         $(this).bind('change', function() {
             var currentSelect = this;
             $(this).find("option:selected").each(function() {
-                chrome.extension.sendRequest({type: "action", on:"select", method:"click", finders:{selectLocators:Utils.getLocators(currentSelect),locators: Utils.getLocators(this)}, params:{} }, function(response) {
+                chrome.extension.sendRequest({type: "action", on:"Select", method:"click", finders:{selectLocators:Utils.getLocators(currentSelect),locators: Utils.getLocators(this)}, params:{} }, function(response) {
                 });
             });
         });

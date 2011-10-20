@@ -36,7 +36,25 @@ Utils.getLocators = function(element) {
     var name = element.getAttribute("name") != undefined ? element.getAttribute("name") : null;
     var xpath = getXPathLocator(element);
 
-    return  {cssSelector:cssSelector,id:id, linkText:linkText,name:name,xpath:xpath};
+    var locators = new Array();
+
+    if (id != null) {
+        locators.push({type:"id", value:id});
+    }
+
+    if (name != null) {
+        locators.push({type:"name", value:name});
+    }
+
+    locators.push({type:"cssSelector", value:cssSelector});
+
+    locators.push({type:"xpath", value:xpath});
+
+    if (linkText != null) {
+        locators.push({type:"linkText", value:linkText});
+    }
+
+    return locators;
 }
 
 /**
@@ -44,6 +62,10 @@ Utils.getLocators = function(element) {
  * @param element - the option element
  */
 Utils.getOptionLocators = function(element) {
+    var locators = new Array();
+    locators.push({type:"Index", value:element.index});
+    locators.push({type:"Value", value:element.index});
+    locators.push({type:"VisibleText", value:element.index});
     return {index:element.index, value:element.value, visibleText:$(element).val()};
 }
 

@@ -12,12 +12,12 @@
     },
     "background_page": "html/background.html",
     "permissions": [
-        "contextMenus", "tabs", "http://*/*", "https://*/*"
+        "contextMenus", "tabs", "http://*/*", "https://*/*" , "tts"
     ],
     "content_scripts": [
         {
             "matches": ["<all_urls>"],
-            "js": ["scripts/jquery-1.5.2.min.js", "scripts/Options.js", "scripts/Recorder.js", "scripts/contentscript.js", "scripts/Utils.js"]
+            "js": ["scripts/jquery-1.5.2.min.js", "scripts/Options.js", "scripts/Model.js","scripts/Controller.js", "scripts/IHM.js","scripts/Recorder.js", "scripts/contentscript.js", "scripts/Utils.js"]
         }
     ]
 }

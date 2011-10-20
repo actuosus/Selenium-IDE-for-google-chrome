@@ -4,9 +4,38 @@
 <head>
     <title>Selenium IDE for Google Chrome</title>
     <script type="text/javascript" src="../scripts/common.js"></script>
+    <script type="text/javascript" src="../scripts/Objects.js"></script>
+    <script type="text/javascript" src="../scripts/Controller.js"></script>
+    <script type="text/javascript" src="../scripts/IHM.js"></script>
+    <script type="text/javascript" src="../scripts/Model.js"></script>
+    <script type="text/javascript">
+
+        var on = false;
+
+        var onrecord = null;
+        var onpause = function(){};
+
+        function init() {
+            globalManager.SeWinController = Controller.getInstance(window);
+            onrecord = globalManager.SeWinController.addRow;
+            chrome.extension.onRequest.addListener(function(request, sender, sendResponse) {
+                globalManager.SeWinController.addRow(request);
+                sendResponse({});
+            });
+        }
+
+        function record() {
+
+            globalManager.SeWinController.addRow = on ? onpause : onrecord;
+            on = !on;
+        }
+    </script>
 
 </head>
-<body onbeforeunload="save()">
+<body onbeforeunload="save()" onload="init();">
+
+<button onclick="record();" value="Record">Record</button>
+
 
 <div id="commands"></div>
 

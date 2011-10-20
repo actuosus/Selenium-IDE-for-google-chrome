@@ -72,37 +72,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Recorder.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Chrome-plugin/scripts/Recorder.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="82" column="96" selection-start="3049" selection-end="3049" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Options.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Chrome-plugin/scripts/Options.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="70" selection-start="1107" selection-end="1107" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Utils.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Chrome-plugin/scripts/Utils.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="90" column="36" selection-start="2976" selection-end="2976" vertical-scroll-proportion="0.34065935">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="background.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Chrome-plugin/html/background.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="0" selection-start="343" selection-end="343" vertical-scroll-proportion="-7.5">
+            <state line="6" column="58" selection-start="275" selection-end="275" vertical-scroll-proportion="-3.75">
               <folding />
             </state>
           </provider>
@@ -111,7 +84,7 @@
       <file leaf-file-name="manifest.json" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Chrome-plugin/manifest.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="141" selection-start="737" selection-end="737" vertical-scroll-proportion="0.0">
+            <state line="22" column="149" selection-start="825" selection-end="825" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -120,7 +93,7 @@
       <file leaf-file-name="contentscript.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Chrome-plugin/scripts/contentscript.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="50" selection-start="1040" selection-end="1040" vertical-scroll-proportion="0.0">
+            <state line="26" column="20" selection-start="1081" selection-end="1081" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -129,7 +102,7 @@
       <file leaf-file-name="selenium-view.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Chrome-plugin/html/selenium-view.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="0" selection-start="314" selection-end="314" vertical-scroll-proportion="-6.875">
+            <state line="6" column="73" selection-start="319" selection-end="319" vertical-scroll-proportion="-3.75">
               <folding />
             </state>
           </provider>
@@ -138,25 +111,52 @@
       <file leaf-file-name="common.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Chrome-plugin/scripts/common.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="58" column="105" selection-start="2150" selection-end="2150" vertical-scroll-proportion="0.0">
+            <state line="32" column="50" selection-start="1170" selection-end="1170" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="controller.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Chrome-plugin/scripts/controller.js">
+      <file leaf-file-name="Objects.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Chrome-plugin/scripts/Objects.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="24" selection-start="988" selection-end="988" vertical-scroll-proportion="0.0">
+            <state line="25" column="36" selection-start="1011" selection-end="1012" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="testcase.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Chrome-plugin/scripts/testcase.js">
+      <file leaf-file-name="Controller.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Chrome-plugin/scripts/Controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="0" selection-start="1116" selection-end="1116" vertical-scroll-proportion="0.0">
+            <state line="74" column="49" selection-start="2014" selection-end="2014" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IHM.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Chrome-plugin/scripts/IHM.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="175" column="27" selection-start="6145" selection-end="6145" vertical-scroll-proportion="0.8945519">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Recorder.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Chrome-plugin/scripts/Recorder.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="86" column="203" selection-start="3513" selection-end="3513" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Utils.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Chrome-plugin/scripts/Utils.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="65" column="26" selection-start="2049" selection-end="2049" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -176,21 +176,21 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/Chrome-plugin/scripts/controler.js" />
-        <option value="$PROJECT_DIR$/Chrome-plugin/scripts/controller.js" />
-        <option value="$PROJECT_DIR$/Chrome-plugin/scripts/testcase.js" />
-        <option value="$PROJECT_DIR$/Converter/src/main/java/TestCase.java" />
-        <option value="$PROJECT_DIR$/Converter/src/main/java/Converter.java" />
         <option value="$PROJECT_DIR$/Converter/pom.xml" />
         <option value="$PROJECT_DIR$/Converter/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/Converter/src/main/java/org/openqa/selenium/Converter.java" />
-        <option value="$PROJECT_DIR$/Chrome-plugin/html/background.html" />
-        <option value="$PROJECT_DIR$/Chrome-plugin/manifest.json" />
         <option value="$PROJECT_DIR$/Chrome-plugin/scripts/contentscript.js" />
         <option value="$PROJECT_DIR$/Chrome-plugin/scripts/Options.js" />
+        <option value="$PROJECT_DIR$/Chrome-plugin/scripts/Model.js" />
+        <option value="$PROJECT_DIR$/Chrome-plugin/scripts/controller.js" />
+        <option value="$PROJECT_DIR$/Chrome-plugin/manifest.json" />
         <option value="$PROJECT_DIR$/Chrome-plugin/scripts/Recorder.js" />
         <option value="$PROJECT_DIR$/Chrome-plugin/html/selenium-view.html" />
+        <option value="$PROJECT_DIR$/Chrome-plugin/html/background.html" />
+        <option value="$PROJECT_DIR$/Chrome-plugin/scripts/Objects.js" />
+        <option value="$PROJECT_DIR$/Chrome-plugin/scripts/Controller.js" />
         <option value="$PROJECT_DIR$/Chrome-plugin/scripts/common.js" />
+        <option value="$PROJECT_DIR$/Chrome-plugin/scripts/IHM.js" />
         <option value="$PROJECT_DIR$/Chrome-plugin/scripts/Utils.js" />
       </list>
     </option>
@@ -251,6 +251,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -299,9 +300,8 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Favorites" />
       <pane id="Scope" />
-      <pane id="PackagesPane" />
+      <pane id="Favorites" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -311,7 +311,7 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="recentsLimit" value="5" />
     <property name="MemberChooser.sorted" value="false" />
-    <property name="options.lastSelected" value="editor.preferences.appearance" />
+    <property name="options.lastSelected" value="reference.idesettings.debugger.javascript" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="DefaultHtmlFileTemplate" value="Html" />
     <property name="MemberChooser.copyJavadoc" value="false" />
@@ -319,9 +319,9 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="dynamic.classpath" value="false" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
+    <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RunManager" selected="Maven.Clean install">
     <configuration default="true" type="MavenRunConfiguration" factoryName="Maven">
@@ -540,6 +540,7 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
+      <changelist id="827ad0c9-b7be-4b30-acb0-ee44a838548c" name="Default" comment="" />
       <created>1318512446607</created>
       <updated>1318512446607</updated>
     </task>
@@ -549,29 +550,29 @@
     <frame x="0" y="1" width="1366" height="766" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Phing Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Phing Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.48863637" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16109422" sideWeight="0.96266234" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.03733766" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16045627" sideWeight="0.67045456" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.03733766" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="JavaEE:App" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="JavaEE:App" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.48863637" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsManagerConfiguration">
@@ -657,77 +658,94 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Chrome-plugin/html/popup.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="77" selection-start="309" selection-end="309" vertical-scroll-proportion="-5.0">
-          <folding />
-        </state>
+        <state line="8" column="77" selection-start="309" selection-end="309" vertical-scroll-proportion="-5.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chrome-plugin/scripts/Options.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="70" selection-start="1107" selection-end="1107" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Chrome-plugin/scripts/testcase.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="0" selection-start="1116" selection-end="1116" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="912" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Chrome-plugin/manifest.json">
+    <entry file="file://$PROJECT_DIR$/Chrome-plugin/scripts/Model.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="141" selection-start="737" selection-end="737" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chrome-plugin/scripts/controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="24" selection-start="988" selection-end="988" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chrome-plugin/html/background.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="0" selection-start="343" selection-end="343" vertical-scroll-proportion="-7.5">
+        <state line="22" column="4" selection-start="932" selection-end="932" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Chrome-plugin/scripts/contentscript.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="50" selection-start="1040" selection-end="1040" vertical-scroll-proportion="0.0">
+        <state line="26" column="20" selection-start="1081" selection-end="1081" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Chrome-plugin/scripts/Recorder.js">
+    <entry file="file://$PROJECT_DIR$/Chrome-plugin/manifest.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="82" column="96" selection-start="3049" selection-end="3049" vertical-scroll-proportion="0.0">
+        <state line="22" column="149" selection-start="825" selection-end="825" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Chrome-plugin/html/selenium-view.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="0" selection-start="314" selection-end="314" vertical-scroll-proportion="-6.875">
+        <state line="6" column="73" selection-start="319" selection-end="319" vertical-scroll-proportion="-3.75">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chrome-plugin/html/background.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="58" selection-start="275" selection-end="275" vertical-scroll-proportion="-3.75">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chrome-plugin/scripts/Objects.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="36" selection-start="1011" selection-end="1012" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chrome-plugin/scripts/Controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="74" column="49" selection-start="2014" selection-end="2014" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Chrome-plugin/scripts/common.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="105" selection-start="2150" selection-end="2150" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chrome-plugin/scripts/Options.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="70" selection-start="1107" selection-end="1107" vertical-scroll-proportion="0.0">
+        <state line="32" column="50" selection-start="1170" selection-end="1170" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Chrome-plugin/scripts/Utils.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="90" column="36" selection-start="2976" selection-end="2976" vertical-scroll-proportion="0.34065935">
+        <state line="65" column="26" selection-start="2049" selection-end="2049" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chrome-plugin/scripts/Recorder.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="86" column="203" selection-start="3513" selection-end="3513" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chrome-plugin/scripts/IHM.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="175" column="27" selection-start="6145" selection-end="6145" vertical-scroll-proportion="0.8945519">
           <folding />
         </state>
       </provider>
@@ -738,10 +756,12 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
+          <last-edited>Converter:ear exploded</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>

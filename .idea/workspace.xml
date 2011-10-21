@@ -71,98 +71,7 @@
     <favorites_list name="WebDriver IDE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="background.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Chrome-plugin/html/background.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="58" selection-start="275" selection-end="275" vertical-scroll-proportion="-3.75">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="manifest.json" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Chrome-plugin/manifest.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="149" selection-start="825" selection-end="825" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="contentscript.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Chrome-plugin/scripts/contentscript.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="20" selection-start="1081" selection-end="1081" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="selenium-view.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Chrome-plugin/html/selenium-view.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="73" selection-start="319" selection-end="319" vertical-scroll-proportion="-3.75">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="common.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Chrome-plugin/scripts/common.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="50" selection-start="1170" selection-end="1170" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Objects.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Chrome-plugin/scripts/Objects.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="36" selection-start="1011" selection-end="1012" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Controller.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Chrome-plugin/scripts/Controller.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="74" column="49" selection-start="2014" selection-end="2014" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IHM.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Chrome-plugin/scripts/IHM.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="175" column="27" selection-start="6145" selection-end="6145" vertical-scroll-proportion="0.8945519">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Recorder.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Chrome-plugin/scripts/Recorder.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="86" column="203" selection-start="3513" selection-end="3513" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Utils.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Chrome-plugin/scripts/Utils.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="65" column="26" selection-start="2049" selection-end="2049" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -176,22 +85,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/Converter/pom.xml" />
         <option value="$PROJECT_DIR$/Converter/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/Converter/src/main/java/org/openqa/selenium/Converter.java" />
-        <option value="$PROJECT_DIR$/Chrome-plugin/scripts/contentscript.js" />
         <option value="$PROJECT_DIR$/Chrome-plugin/scripts/Options.js" />
         <option value="$PROJECT_DIR$/Chrome-plugin/scripts/Model.js" />
         <option value="$PROJECT_DIR$/Chrome-plugin/scripts/controller.js" />
         <option value="$PROJECT_DIR$/Chrome-plugin/manifest.json" />
-        <option value="$PROJECT_DIR$/Chrome-plugin/scripts/Recorder.js" />
-        <option value="$PROJECT_DIR$/Chrome-plugin/html/selenium-view.html" />
-        <option value="$PROJECT_DIR$/Chrome-plugin/html/background.html" />
-        <option value="$PROJECT_DIR$/Chrome-plugin/scripts/Objects.js" />
-        <option value="$PROJECT_DIR$/Chrome-plugin/scripts/Controller.js" />
-        <option value="$PROJECT_DIR$/Chrome-plugin/scripts/common.js" />
-        <option value="$PROJECT_DIR$/Chrome-plugin/scripts/IHM.js" />
         <option value="$PROJECT_DIR$/Chrome-plugin/scripts/Utils.js" />
+        <option value="$PROJECT_DIR$/Chrome-plugin/scripts/Recorder.js" />
+        <option value="$PROJECT_DIR$/Chrome-plugin/scripts/Controller.js" />
+        <option value="$PROJECT_DIR$/Chrome-plugin/scripts/Objects.js" />
+        <option value="$PROJECT_DIR$/Chrome-plugin/scripts/common.js" />
+        <option value="$PROJECT_DIR$/Chrome-plugin/html/selenium-view.html" />
+        <option value="$PROJECT_DIR$/Chrome-plugin/scripts/contentscript.js" />
+        <option value="$PROJECT_DIR$/Chrome-plugin/html/option.html" />
+        <option value="$PROJECT_DIR$/Chrome-plugin/html/background.html" />
+        <option value="$PROJECT_DIR$/Chrome-plugin/scripts/IHM.js" />
       </list>
     </option>
   </component>
@@ -267,34 +176,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Chrome-plugin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WebDriver IDE" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Chrome-plugin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WebDriver IDE" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Chrome-plugin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="html" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -547,8 +428,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="1" width="1366" height="766" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="1" width="1366" height="766" extended-state="1" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Phing Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -564,7 +445,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16045627" sideWeight="0.67045456" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21901141" sideWeight="0.67045456" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.03733766" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="JavaEE:App" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -680,72 +561,79 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Chrome-plugin/scripts/contentscript.js">
+    <entry file="file://$PROJECT_DIR$/Chrome-plugin/scripts/Utils.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="20" selection-start="1081" selection-end="1081" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chrome-plugin/manifest.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="149" selection-start="825" selection-end="825" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chrome-plugin/html/selenium-view.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="73" selection-start="319" selection-end="319" vertical-scroll-proportion="-3.75">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chrome-plugin/html/background.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="58" selection-start="275" selection-end="275" vertical-scroll-proportion="-3.75">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chrome-plugin/scripts/Objects.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="36" selection-start="1011" selection-end="1012" vertical-scroll-proportion="0.0">
+        <state line="23" column="16" selection-start="934" selection-end="934" vertical-scroll-proportion="0.5867347">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Chrome-plugin/scripts/Controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="74" column="49" selection-start="2014" selection-end="2014" vertical-scroll-proportion="0.0">
+        <state line="49" column="27" selection-start="1616" selection-end="1622" vertical-scroll-proportion="-0.28248587">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chrome-plugin/scripts/Objects.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="31" selection-start="978" selection-end="978" vertical-scroll-proportion="0.5867347">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chrome-plugin/html/selenium-view.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="82" selection-start="1302" selection-end="1302" vertical-scroll-proportion="0.79787236">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chrome-plugin/scripts/contentscript.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="21" selection-start="938" selection-end="938" vertical-scroll-proportion="0.5408163">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chrome-plugin/html/option.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chrome-plugin/manifest.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="149" selection-start="825" selection-end="825" vertical-scroll-proportion="0.57391304">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Chrome-plugin/scripts/common.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="50" selection-start="1170" selection-end="1170" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chrome-plugin/scripts/Utils.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="65" column="26" selection-start="2049" selection-end="2049" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chrome-plugin/scripts/Recorder.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="86" column="203" selection-start="3513" selection-end="3513" vertical-scroll-proportion="0.0">
+        <state line="42" column="0" selection-start="1347" selection-end="1347" vertical-scroll-proportion="0.5867347">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Chrome-plugin/scripts/IHM.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="175" column="27" selection-start="6145" selection-end="6145" vertical-scroll-proportion="0.8945519">
+        <state line="176" column="43" selection-start="5900" selection-end="5900" vertical-scroll-proportion="0.3112245">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chrome-plugin/html/background.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="55" selection-start="200" selection-end="200" vertical-scroll-proportion="0.13297872">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chrome-plugin/scripts/Recorder.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="94" column="186" selection-start="3349" selection-end="3482" vertical-scroll-proportion="1.173913">
           <folding />
         </state>
       </provider>

@@ -4,6 +4,7 @@
 <head>
     <title>Selenium IDE for Google Chrome</title>
     <script type="text/javascript" src="../scripts/common.js"></script>
+    <script type="text/javascript" src="../scripts/Utils.js"></script>
     <script type="text/javascript" src="../scripts/Objects.js"></script>
     <script type="text/javascript" src="../scripts/Controller.js"></script>
     <script type="text/javascript" src="../scripts/IHM.js"></script>
@@ -27,6 +28,7 @@
         function record() {
 
             globalManager.SeWinController.addRow = on ? onpause : onrecord;
+            document.getElementById("record").textContent = on ? "record" : "pause";
             on = !on;
         }
     </script>
@@ -34,7 +36,7 @@
 </head>
 <body onbeforeunload="save()" onload="init();">
 
-<button onclick="record();" value="Record">Record</button>
+<button onclick="record();" value="Record" id="record">record</button>
 
 
 <div id="commands"></div>

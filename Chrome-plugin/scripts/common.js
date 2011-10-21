@@ -19,13 +19,18 @@
  *    @author Jeremy Herault (jeremy.herault AT gmail.com)
  */
 
+/**
+ * Object used to manage Se-IDE for Google Chrome
+ */
 function GlobalManager() {
     this.SeWinController = null;
 }
 
 GlobalManager.initialized = false;
 
-
+/**
+ * Call when the user click on the action icon
+ */
 GlobalManager.prototype.start = function() {
 
 

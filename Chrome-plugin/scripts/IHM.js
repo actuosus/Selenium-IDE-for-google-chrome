@@ -19,25 +19,26 @@
  *    @author Jeremy Herault (jeremy.herault AT gmail.com)
  */
 
-
+/**
+ * Object used to manage the webview (add rows ...)
+ * @param win
+ */
 function IHM(win) {
     this.win = win;
 }
 
-IHM.prototype.newSelect = function(newSelect) {
-
-    var doc = this.win.document;
-    var commands = doc.getElementById("commands");
-    var row = doc.createElement("div");
-
-    var partOne = doc.createTextNode("var " + newSelect.name + " = new Select(driver.findElement(By.");
-    var partTwo = doc.createTextNode("(");
-    var partThree = doc.createTextNode("));")
+/**
+ * Private method used to create a select element bound to an input and vice versa with the element locators
+ * @param locators - the different locators available
+ * @param doc - the document object
+ * @return a json object {select:the_select_object, input:the_input_object}
+ */
+IHM.prototype._getSelectors = function(locators, doc) {
 
     var select = doc.createElement("select");
 
-    for (var i = 0; i < newSelect.locators.length; i++) {
-        var locator = newSelect.locators[i];
+    for (var i = 0; i < locators.length; i++) {
+        var locator = locators[i];
         var option = doc.createElement("option");
         option.appendChild(doc.createTextNode(locator.type));
         option.setAttribute("value", locator.value);
@@ -60,136 +61,138 @@ IHM.prototype.newSelect = function(newSelect) {
 
     input.value = select.options[0].value;
 
-    row.appendChild(partOne);
-    row.appendChild(select);
-    row.appendChild(partTwo);
-    row.appendChild(input);
-    row.appendChild(partThree);
-    commands.appendChild(row);
-    commands.appendChild(doc.createElement("br"));
+    return {select:select, input:input};
 }
 
+/**
+ * Used to add a new Select object to the testcase
+ * @param newSelect - a Select object {@see Objects.js}
+ */
+IHM.prototype.newSelect = function(newSelect) {
 
-IHM.prototype._addSelectSingleAction = function(finders, row, doc) {
+    var doc = this.win.document;
+    var commands = doc.getElementById("commands");
+    var row = doc.createElement("div");
 
-    var begin = doc.createTextNode("driver.findElement(By."); //locator pour select
-    var parenth = doc.createTextNode("(");
-    var parenth2 = doc.createTextNode("(");
-    var next = doc.createTextNode(")).findElement(By.");//locator pour option
-    var end = doc.createTextNode(")).click();");
+    var partOne = doc.createTextNode("Select " + newSelect.name + " = new Select(driver.findElement(By.");
+    var partTwo = doc.createTextNode("(");
+    var partThree = doc.createTextNode("));")
 
-    var selectSel = doc.createElement("select");
+    var selectors = this._getSelectors(newSelect.locators, doc);
 
-    for (var i = 0; i < finders.selectLocators.length; i++) {
-        var locator = finders.selectLocators[i];
-        var option = doc.createElement("option");
-        option.appendChild(doc.createTextNode(locator.type));
-        option.setAttribute("value", locator.value);
-        selectSel.appendChild(option);
-    }
+    var select = selectors.select;
+    var input = selectors.input;
 
-    var inputSelect = doc.createElement("input");
-    inputSelect.setAttribute("type", "text");
-    inputSelect.setAttribute("length", "25");
-
-    inputSelect.addEventListener("blur", function() {
-        var index = selectSel.selectedIndex;
-        selectSel.options[index].setAttribute("value", inputSelect.value);
-    }, true);
-
-    selectSel.addEventListener("change", function() {
-        var index = selectSel.selectedIndex;
-        inputSelect.value = selectSel.options[index].value;
-    }, true);
-
-    inputSelect.value = selectSel.options[0].value;
-
-    var selectOption = doc.createElement("select");
-
-    for (var i = 0; i < finders.locators.length; i++) {
-        var locator = finders.locators[i];
-        var option = doc.createElement("option");
-        option.appendChild(doc.createTextNode(locator.type));
-        option.setAttribute("value", locator.value);
-        selectOption.appendChild(option);
-    }
-
-    var inputOption = doc.createElement("input");
-    inputOption.setAttribute("type", "text");
-    inputOption.setAttribute("length", "25");
-
-    inputOption.addEventListener("blur", function() {
-        var index = selectOption.selectedIndex;
-        selectOption.options[index].setAttribute("value", inputOption.value);
-    }, true);
-
-    selectOption.addEventListener("change", function() {
-        var index = selectOption.selectedIndex;
-        inputOption.value = selectOption.options[index].value;
-    }, true);
-
-    inputOption.value = selectOption.options[0].value;
-
-    row.appendChild(begin);
-    row.appendChild(selectSel);
-    row.appendChild(parenth);
-    row.appendChild(inputSelect);
-    row.appendChild(next);
-    row.appendChild(selectOption);
-    row.appendChild(parenth2);
-    row.appendChild(inputOption);
-    row.appendChild(end);
+    Utils.appendChildren(row, [partOne, select, partTwo, input, partThree]);
+    Utils.appendChildren(commands, [row, doc.createElement("br")]);
 }
 
-IHM.prototype._addSelectMultipleAction = function(method, finders, row, doc){
-
+/**
+ * Private method used to create a select action row
+ * @param method - the method to call on the select object
+ * @param finders - locators to find the option
+ * @param row - the DOM element corresponding to the new row
+ * @param doc - the document object
+ */
+IHM.prototype._createSelectAction = function(method, finders, row, doc) {
     var begin = doc.createTextNode(finders.selectName + "." + method);
     var parenth = doc.createTextNode("(");
-    var end = doc.createtextNode(");");
+    var end = doc.createTextNode(");");
 
-    var selectOption = doc.createElement("select");
+    var selectors2 = this._getSelectors(finders.locators, doc);
 
-    for (var i = 0; i < finders.locators.length; i++) {
-        var locator = finders.locators[i];
-        var option = doc.createElement("option");
-        option.appendChild(doc.createTextNode(locator.type));
-        option.setAttribute("value", locator.value);
-        selectOption.appendChild(option);
-    }
+    var selectOption = selectors2.select;
+    var inputOption = selectors2.input;
 
-    var inputOption = doc.createElement("input");
-    inputOption.setAttribute("type", "text");
-    inputOption.setAttribute("length", "25");
-
-    inputOption.addEventListener("blur", function() {
-        var index = selectOption.selectedIndex;
-        selectOption.options[index].setAttribute("value", inputOption.value);
-    }, true);
-
-    selectOption.addEventListener("change", function() {
-        var index = selectOption.selectedIndex;
-        inputOption.value = selectOption.options[index].value;
-    }, true);
-
-    inputOption.value = selectOption.options[0].value;
-
-    row.appendChild(begin);
-
+    Utils.appendChildren(row, [begin, selectOption, parenth, inputOption, end]);
 }
 
+/**
+ * Method used to add a select action row
+ * @param method - the method to callon the select object
+ * @param finders - locators to find the option
+ */
 IHM.prototype.addSelectAction = function(method, finders) {
 
     var doc = this.win.document;
     var commands = doc.getElementById("commands");
     var row = doc.createElement("div");
 
-    if (method == "click") {
-        this._addSelectSingleAction(finders, row, doc);
-    } else {
-        //selectBy, deselectBy
-        this._addSelectMultipleAction(method, finders, row, doc);
+    this._createSelectAction(method, finders, row, doc);
+
+    Utils.appendChildren(commands, [row, doc.createElement("br")]);
+}
+
+/**
+ * Private method used to create a click action row
+ * @param locators - locators of the object to be clicked
+ * @param row - the new row
+ * @param doc - the document object
+ */
+IHM.prototype._createClickAction = function(locators, row, doc) {
+
+    var begin = doc.createTextNode("driver.findElement(By.");
+    var parenth = doc.createTextNode("(");
+    var end = doc.createTextNode(")).click();");
+
+    var selectors = this._getSelectors(locators, doc);
+
+    var select = selectors.select;
+    var input = selectors.input;
+
+    Utils.appendChildren(row, [begin, select, parenth, input, end]);
+}
+
+/**
+ * private method used to create a new sendkeys action row
+ * @param locators - locators of the object that should receive the keys
+ * @param keys - the keys
+ * @param row - the row
+ * @param doc - the document
+ */
+IHM.prototype._craeteSendKeysAction = function(locators, keys, row, doc) {
+
+    var begin = doc.createTextNode("driver.findElement(By.");
+    var parenth = doc.createTextNode("(");
+    var next = doc.createTextNode(")).sendKeys(");
+    var end = doc.createTextNode(");");
+
+    var selectors = this._getSelectors(locators, doc);
+
+    var select = selectors.select;
+    var input = selectors.input;
+
+    var keysInput = doc.createElement("input");
+    keysInput.setAttribute("type", "text");
+    keysInput.setAttribute("length", "25");
+    keysInput.setAttribute("value", keys);
+
+    Utils.appendChildren(row, [begin, select, parenth, input, next, keysInput, end]);
+}
+
+/**
+ * Add a new row for an action on a webElement
+ * @param method - the applied on the webElement
+ * @param finders - locators to find the webElement
+ * @param params - parameters (can be empty)
+ */
+IHM.prototype.addWebElementAction = function(method, finders, params) {
+
+    var doc = this.win.document;
+    var commands = doc.getElementById("commands");
+    var row = doc.createElement("div");
+
+    switch (method) {
+
+        case "click":
+            this._createClickAction(finders.locators, row, doc);
+            break;
+        case "sendKeys":
+            this._craeteSendKeysAction(finders.locators, params.keys, row, doc);
+            break;
+        default:
+            break;
     }
 
-    commands.appendChild(row);
-    commands.appendChild(doc.createElement("br"));
+    Utils.appendChildren(commands, [row, doc.createElement("br")]);
 }

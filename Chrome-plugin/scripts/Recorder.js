@@ -19,13 +19,18 @@
  *    @author Jeremy Herault (jeremy.herault AT gmail.com)
  */
 
-
+/**
+ * Object used to record action on the webapp
+ */
 function Recorder() {
 
     this.knownSelects = new Array();
     this.knownSelectsName = new Array();
 }
 
+/**
+ * Used to add click listener on clickable objects
+ */
 Recorder.prototype.addClickListeners = function () {
 
     var clickables = Options.getClickables();
@@ -33,13 +38,16 @@ Recorder.prototype.addClickListeners = function () {
     $.each(clickables, function(index, value) {
         $(value).each(function(index) {
             $(this).bind('click', function() {
-                chrome.extension.sendRequest({type: "action", on:"WebElement", method:"click", finders:{ locators: Utils.getLocators(this)}, params:{}}, function(response) {
+                chrome.extension.sendRequest({type: "action", on:"WebElement", method:"click", finders:{locators: Utils.getLocators(this)}, params:{}}, function(response) {
                 });
             })
         });
     });
 }
 
+/**
+ * Used to add input listener on seizable objects
+ */
 Recorder.prototype.addInputListeners = function () {
 
     var inputables = Options.getInputables();
@@ -54,6 +62,9 @@ Recorder.prototype.addInputListeners = function () {
     });
 }
 
+/**
+ * Used to add select listener on single and multiple select objects
+ */
 Recorder.prototype.addSelectListeners = function () {
 
     $("select:[multiple]").each(function(index) {
@@ -84,6 +95,7 @@ Recorder.prototype.addSelectListeners = function () {
                         chrome.extension.sendRequest({type:"new", classType:"Select", varname:"select" + recorder.knownSelects.length, finders:{locators:Utils.getLocators(currentSelect)}}, function(response) {
                         });
                     }
+                    index = $.inArray(currentSelect, recorder.knownSelects);
                     chrome.extension.sendRequest({type:"action", on:"Select", method: this.selected ? "selectBy" : "deselectBy", finders:{selectName:recorder.knownSelectsName[index],locators: Utils.getOptionLocators(this)}, params:{}}, function(response) {
                     });
                     this._wasSelected = this.selected;
@@ -96,7 +108,15 @@ Recorder.prototype.addSelectListeners = function () {
         $(this).bind('change', function() {
             var currentSelect = this;
             $(this).find("option:selected").each(function() {
-                chrome.extension.sendRequest({type: "action", on:"Select", method:"click", finders:{selectLocators:Utils.getLocators(currentSelect),locators: Utils.getLocators(this)}, params:{} }, function(response) {
+                var index = $.inArray(currentSelect, recorder.knownSelects);
+                if (index == -1) {
+                        recorder.knownSelects.push(currentSelect);
+                        recorder.knownSelectsName.push("select" + recorder.knownSelects.length);
+                        chrome.extension.sendRequest({type:"new", classType:"Select", varname:"select" + recorder.knownSelects.length, finders:{locators:Utils.getLocators(currentSelect)}}, function(response) {
+                        });
+                    }
+                index = $.inArray(currentSelect, recorder.knownSelects);
+                chrome.extension.sendRequest({type: "action", on:"Select", method: "selectBy", finders:{selectName:recorder.knownSelectsName[index],locators: Utils.getOptionLocators(this)}, params:{} }, function(response) {
                 });
             });
         });

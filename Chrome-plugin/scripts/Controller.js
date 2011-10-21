@@ -19,7 +19,7 @@
  *    @author Jeremy Herault (jeremy.herault AT gmail.com)
  */
 
- var count = 0;
+
 /**
  * Controller constructor
  * @param win - the Selenium IDE window
@@ -27,17 +27,26 @@
 function Controller(win) {
     this.win = win;
     this.ihm = new IHM(this.win);
-   // this.model = new Model();
-    count+=1;
+    // this.model = new Model();
 }
 
-Controller.getInstance = function(win){
-    if (Controller._instance == undefined){
+/**
+ * Used to get the singleton
+ * @param win - the Selenium IDE window
+ * @return the controller
+ */
+Controller.getInstance = function(win) {
+    if (Controller._instance == undefined) {
         Controller._instance = new Controller(win);
     }
     return Controller._instance;
 }
 
+/**
+ * Add a row when a new object is created
+ * @param request - json object
+ * {type:"new", classType:"aClassName", varname:"the_variable_name", finders:{locators:Utils.getLocators(the DOM element)}}
+ */
 Controller.prototype.addNew = function(request) {
 
     switch (request.classType) {
@@ -51,34 +60,52 @@ Controller.prototype.addNew = function(request) {
     }
 }
 
+/**
+ * Add an action row
+ * @param request - json object
+ * {type: "action", on:"WebElement | Select", method:"click | sendKeys", finders:{locators: Utils.getLocators(the DOM element)}, params:{}}
+ */
 Controller.prototype.addAction = function(request) {
 
-    switch(request.on){
+    switch (request.on) {
 
-        case "Select": this.ihm.addSelectAction(request.method, request.finders);break;
-        case "WebElement": break;
-        default:break;
+        case "Select":
+            this.ihm.addSelectAction(request.method, request.finders);
+            break;
+        case "WebElement":
+            this.ihm.addWebElementAction(request.method, request.finders, request.params);
+            break;
+        default:
+            break;
     }
 
 
 }
 
+/**
+ * Add an action row
+ * @param request - json object
+ * {type: "assert", ...todo}
+ */
 Controller.prototype.addAssert = function(request) {
 
 
 }
 
 /**
- * Function called to add a row for a given testcase
- * @param jsonRow - the row to add
+ * Add a row to the current testcase
+ * @param request - json object with needed information
  */
 Controller.prototype.addRow = function(request) {
     switch (request.type) {
-        case "new": this.addNew(request);
+        case "new":
+            this.addNew(request);
             break;
-        case "action":this.addAction(request);
+        case "action":
+            this.addAction(request);
             break;
-        case "assert":this.addAssert(request);
+        case "assert":
+            this.addAssert(request);
             break;
         default:
             break;

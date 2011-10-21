@@ -19,7 +19,10 @@
  *    @author Jeremy Herault (jeremy.herault AT gmail.com)
  */
 
-
+/**
+ * Represent a Select object
+ * @param request - json object
+ */
 function Select(request){
 
     this.name = request.varname;
